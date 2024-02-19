@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round">
+          <span class="crescent"></span>
+        </div>
+      </label>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Jay Samra</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jay Samra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" class="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey, I'm</p>
+        <h1 class="title">Jay</h1>
+        <p class="section__text__p2">I'm a <span id="role"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>8 Years in education for comp Sci <br/>Frontend Dev, Backend Dev</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />First-Class Degree (4.0 GPA)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a recent computer science graduate with a first class degree 
+              and 8 years of programming experience academically. Feel free to navigate 
+              my site developed by me in HTML, CSS and JS and discover more about me,
+              my experience, past projects, and an insight on the current projects I'm working on!
+              If you would like to contact me regarding a project or work, you can find my contact Info
+              at the bottom of the page, enjoy!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  
+                
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matlab</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                  <div>
+                    <h3>Webflow</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse Some of My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers current-set">
+          <div class="project-details-container color-container">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">Blockchain Wallet</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn flip-btn">Details</button>
+                  </div>
+                </div>
+                <div class="back">
+                  <li>Deep learning model to predict mushroom edibility</li>
+                  <li>Cleaned and validated large data set</li>
+                  <li>Trained a model using training data</li>
+                  <li>Developed a convoluted neural network (CNN)</li>
+                  <li>Developed a UI to fill out mushroom features</li>
+                  <li>Trained model provided accurate predictions on the jushroom edibility and details</li>
+                  <li>Output precision, recall and F1 scores with a confusion matrix to ensure correct output</li>
+                  <button class="btn btn-color-2 project-btn flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 1" class="project-img"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">Deep Learning Model</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn flip-btn">Details</button>
+                  </div>
+                </div>
+                <div class="back">
+                  <li>Deep learning model to predict mushroom edibility</li>
+                  <li>Cleaned and validated large data set</li>
+                  <li>Trained a model using training data</li>
+                  <li>Developed a convoluted neural network (CNN)</li>
+                  <li>Developed a UI to fill out mushroom features</li>
+                  <li>Trained model provided accurate predictions on the jushroom edibility and details</li>
+                  <li>Output precision, recall and F1 scores with a confusion matrix to ensure correct output</li>
+                  <button class="btn btn-color-2 project-btn flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 1" class="project-img"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">K-Means Clustering</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn flip-btn">Details</button>
+                  </div>
+                </div>
+                <div class="back">
+                  <li>Cluster personalities based on big 5 theory using k-means</li>
+                  <li>Cleaned and validated large data set</li>
+                  <li>Trained a model and applied k-means clustering</li>
+                  <li>Visualised outputs in graph fromats for readability</li>
+                  <li>Developed a UI for users to interact and fill out their personality details</li>
+                  <li>Clustered and predicted users personalities, visualised using PCA</li>
+                  <li>Provided feedback on the users personality type, and cluster</li>
+                  <button class="btn btn-color-2 project-btn flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="about-containers next-set" style="display: none;">
+              <div class="project-details-container color-container">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 1" class="project-img"/>
+                      </div>
+                      <h2 class="experience-sub-title project-title">K-Means Clustering</h2>
+                      <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                        <button class="btn btn-color-2 project-btn flip-btn">Details</button>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <li>Developed a program to cluster personalities</li>
+                      <li>Used big 5 OCEAN theory to build a statistically backed model</li>
+                      <li>Cleaned large datasets using pandas</li>
+                      <li>Built a k-means model to cluster the data based on personalities</li>
+                      <li>Output visualisations of personalities based on the training data</li>
+                      <li>Allowed users to answer questions and recieve their own personality cluster</li>
+                      <li>Trained the model to cluster accurately based on data</li>
+                      <li>Implemented PCA and dimension reduction</li>
+                      <button class="btn btn-color-2 project-btn flip-back-btn">Back</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="project-details-container color-container">
+              <div class="flip-container">
+                <div class="flipper">
+                  <div class="front">
+                    <div class="article-container">
+                      <img src="./assets/project-3.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">K-Means Clustering</h2>
+                    <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                      <button class="btn btn-color-2 project-btn flip-btn">Details</button>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <li>Developed a program to cluster personalities</li>
+                    <li>Used big 5 OCEAN theory to build a statistically backed model</li>
+                    <li>Cleaned large datasets using pandas</li>
+                    <li>Built a k-means model to cluster the data based on personalities</li>
+                    <li>Output visualisations of personalities based on the training data</li>
+                    <li>Allowed users to answer questions and recieve their own personality cluster</li>
+                    <li>Trained the model to cluster accurately based on data</li>
+                    <li>Implemented PCA and dimension reduction</li>
+                    <button class="btn btn-color-2 project-btn flip-back-btn">Back</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 1" class="project-img"/>
+                  </div>
+                  <h2 class="experience-sub-title project-title">K-Means Clustering</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn flip-btn">Details</button>
+                  </div>
+                </div>
+                <div class="back">
+                  <li>Developed a program to cluster personalities</li>
+                  <li>Used big 5 OCEAN theory to build a statistically backed model</li>
+                  <li>Cleaned large datasets using pandas</li>
+                  <li>Built a k-means model to cluster the data based on personalities</li>
+                  <li>Output visualisations of personalities based on the training data</li>
+                  <li>Allowed users to answer questions and recieve their own personality cluster</li>
+                  <li>Trained the model to cluster accurately based on data</li>
+                  <li>Implemented PCA and dimension reduction</li>
+                  <button class="btn btn-color-2 project-btn flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        </section>
+        <button class="btn btn-color-2 project-btn next-btn">Next</button>
+        <button class="btn btn-color-2 project-btn back-btn" style="display: none;">Back</button>
+
+       
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">jaipalsamra20@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
